@@ -1,0 +1,208 @@
+body{
+    background-color: hsl(231, 7%, 60%);
+    font-family: "Roboto", serif;
+}
+/*Sign-up form start*/
+.pagina1{
+    background-color: hsl(0, 0%, 100%);
+    margin: 5em 20em;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-radius: 20px;
+}
+
+.derecha{
+    padding: 1em 3.5em;
+}
+
+.titulo{
+    color: hsl(234, 29%, 20%);
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 0.35em 0px 0.4em 0px;
+}
+
+.lista{
+    list-style: none;
+    margin-top: 28px;
+    margin-left: -40px;
+}
+
+.lista li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lista img{
+    padding: 0px 10px 0px 0px;
+}
+
+.formulario{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label{
+    font-size: 0.8em;
+    color: hsl(235, 18%, 26%);
+    font-weight: bold;
+}
+
+.formulario input{
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.formulario button{
+    padding: 15px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.formulario button:hover{
+    background: linear-gradient(to right, hsl(4, 100%, 67%) 0%, hsl(22, 96%, 56%) 100%);
+}
+
+.mensaje-error {
+    font-size: 0.75em;
+    color: hsl(4, 100%, 67%);
+    font-weight: bold;
+    margin-top: -2em;
+    text-align: end;
+  }
+  
+.error {
+    background: hsl(4, 100%, 67%, 0.2) !important;
+    border: 2px solid hsl(4, 100%, 67%);
+    color: hsl(4, 100%, 67%) !important;
+}
+
+.izquierda{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.izquierda img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/*Sign-up form end*/
+
+/*Success message start*/
+.pagina2{
+    background-color: hsl(0, 0%, 100%);
+    margin: 7.5em 32.5em;
+    padding: 3em;
+    border-radius: 20px;
+}
+
+.imagen{
+    width: 3.5em;
+}
+
+/*Success message start end*/
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    body{
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    /*Sign-up form start*/
+    .pagina1{
+        margin: 2em;
+        padding: 0em;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        border-radius: 0px;
+    }
+
+    .derecha{
+        padding: 0em !important;
+        order: 2;
+        width: 100%;
+    }
+
+    .titulo{
+        font-size: 2.2em;
+    }
+
+    .texto{
+        font-size: 0.9em;
+    }
+
+    .lista li{
+        font-size: 0.9em;
+        align-items: start;
+        line-height: 1.5em;
+    }
+
+    .lista img{
+        padding: 0px 10px 15px 0px;
+    }
+
+    .formulario{
+        margin-top: 20px;
+    }
+
+    .formulario label{
+        font-size: 0.7em;
+    }
+
+    .formulario input{
+        font-size: 0.85em;
+    }
+
+    .formulario button{
+        font-size: 0.9em;
+    }
+
+    .mensaje-error{
+        font-size: 0.7em;
+    }
+
+    .pagina1 .izquierda{
+        width: calc(100% + 5em);
+        margin: -2.5em -2.5em 1em -2.5em;
+    }
+
+    .izquierda img{
+        content: url("assets/images/illustration-sign-up-mobile.svg");
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    /*Sign-up form end*/
+
+    /*Success message start*/
+    .pagina2{
+        margin: 5em 0em 0em 0em;
+        padding: 3em 1em 1em 1em;
+    }
+
+    .pagina2 .formulario{
+        margin-top: 11.5em;
+    }
+
+    .pagina2 .titulo{
+        margin: 0.5em 0px 0.5em 0px;
+    }
+    
+    /*Success message start end*/
+
+    .hidden{
+        display: none;
+    }
+}
